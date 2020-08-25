@@ -1,0 +1,224 @@
+{
+    "anims": [
+        {
+            "key": "player_idle_charge",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_idle_charge"
+                }
+            ]
+        },
+        {
+            "key": "player_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_idle"
+                }
+            ]
+        },
+        {
+            "key": "player_walk_charge",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 6,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_walk_charge_0"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_walk_charge_1"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_walk_charge_2"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_walk_charge_3"
+                }
+            ]
+        },
+        {
+            "key": "player_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 6,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_walk_0"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_walk_1"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_walk_2"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "player_walk_3"
+                }
+            ]
+        },
+        {
+            "key": "monster_spawn",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 6,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_0"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_1"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_2"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_3"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_4"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_5"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_6"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_7"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_8"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_spawn_9"
+                }
+            ]
+        },
+        {
+            "key": "monster_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 6,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_idle_0"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_idle_1"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_idle_2"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_idle_3"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "monster_up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 6,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_up_0"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_up_1"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_up_2"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_up_3"
+                }
+            ]
+        },
+        {
+            "key": "monster_right",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 6,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_side_0"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_side_1"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_side_2"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_side_3"
+                }
+            ]
+        },
+        {
+            "key": "monster_down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 6,
+            "frames": [
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_down_0"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_down_1"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_down_2"
+                },
+                {
+                    "key": "lb_sprites",
+                    "frame": "monster_down_3"
+                }
+            ]
+        }
+    ]
+}
