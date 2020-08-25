@@ -8,7 +8,7 @@ class Bootloader extends Phaser.Scene {
         });
     
         //hacer acá abajo el preload
-        this.load.image('player','assets/placeholder.png');
+        this.load.image('playerhb','assets/placeholder.png');
         this.load.image('tileset','assets/tileset_labyrinth.png');
         this.load.image('button1','assets/button_1.png');
         this.load.image('button2','assets/button_2.png');

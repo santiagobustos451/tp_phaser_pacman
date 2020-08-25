@@ -3,7 +3,7 @@ import Example from '../gameObjects/Obj_example.js'
 
 //variables aquí
 var cursors;
-var player;
+var playerhb;
 var playersprite;
 var map;
 var animsjson;
@@ -45,11 +45,11 @@ class escena1 extends Phaser.Scene {
         const walls = map.createStaticLayer('walls', tileset, 0, 0);
         walls.setCollisionByExclusion(-1, true);
 
-        player = this.physics.add.sprite(cw-100,250,'player').setAlpha(0.01);
+        playerhb = this.physics.add.sprite(cw-100,250,'playerhb').setAlpha(0.01);
         playersprite = this.add.sprite(cw,250,'lb_sprites').setFrame('player_idle');
         
-        player.setCollideWorldBounds(true);
-        this.physics.add.collider(player, walls);
+        playerhb.setCollideWorldBounds(true);
+        this.physics.add.collider(playerhb, walls);
 
         cursors = this.input.keyboard.createCursorKeys();
         animsjson = this.cache.json.get('animsjson');
@@ -65,12 +65,12 @@ class escena1 extends Phaser.Scene {
     //update
     update (){
         //mover sprite a jugador
-        playersprite.x=player.x;
-        playersprite.y=player.y;
+        playersprite.x=playerhb.x;
+        playersprite.y=playerhb.y;
 
         if (cursors.up.isDown)
         {
-            player.setVelocityY(-60);
+            playerhb.setVelocityY(-60);
             if(animplay==false){
                 animplay=true;
                 playersprite.play('player_walk');
@@ -78,7 +78,7 @@ class escena1 extends Phaser.Scene {
         }
         else if (cursors.down.isDown)
         {
-            player.setVelocityY(60);
+            playerhb.setVelocityY(60);
             if(animplay==false){
                 animplay=true;
                 playersprite.play('player_walk');
@@ -87,7 +87,7 @@ class escena1 extends Phaser.Scene {
         }
         else if (cursors.right.isDown)
         {
-            player.setVelocityX(60);
+            playerhb.setVelocityX(60);
             playersprite.setFlipX(true);
             if(animplay==false){
                 animplay=true;
@@ -97,7 +97,7 @@ class escena1 extends Phaser.Scene {
         }
         else if (cursors.left.isDown)
         {
-            player.setVelocityX(-60);
+            playerhb.setVelocityX(-60);
             playersprite.setFlipX(false);
             if(animplay==false){
                 animplay=true;
@@ -106,11 +106,11 @@ class escena1 extends Phaser.Scene {
 
         }
         
-        if(player.body.velocity.x == 0 && player.body.velocity.y==0){
+        if(playerhb.body.velocity.x == 0 && playerhb.body.velocity.y==0){
             playersprite.play('player_idle')
             animplay = false;
         }
-        //console.log(map.getTileAtWorldXY(player.x,player.y,true))
+        //console.log(map.getTileAtWorldXY(playerhb.x,playerhb.y,true))
 
     }
 }
